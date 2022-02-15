@@ -1,14 +1,17 @@
 <template>
-    <div class="container">
-        <div v-for="postcard in postcards" :key="postcard.id">
+    <div class="container py-5 bg-warning">
+        <div class="border border-dark p-3" v-for="postcard in postcards" :key="postcard.id">
             <div>
-                <span> <strong>{{postcard.sender}}</strong> </span> - <span> <i> {{postcard.reciver}}</i> </span>
+                <span class="d-flex justify-content-around ">
+                    <strong>{{postcard.sender}}</strong>
+                    <i> {{postcard.reciver}}</i>
+                </span>
             </div>
             <div>
                 <p>{{postcard.text}}</p>
             </div>
-            <div>
-                <img v-if="postcard.image" :src="'storage/myimage/' + postcard.image" width="100px">
+            <div class="box">
+                <img class="img-fluid" v-if="postcard.image" :src="'storage/myimage/' + postcard.image" >
             </div>
         </div>
     </div>

@@ -1957,6 +1957,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -37611,28 +37614,32 @@ var render = function () {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "container" },
+    { staticClass: "container py-5 bg-warning" },
     _vm._l(_vm.postcards, function (postcard) {
-      return _c("div", { key: postcard.id }, [
-        _c("div", [
-          _c("span", [_c("strong", [_vm._v(_vm._s(postcard.sender))])]),
-          _vm._v(" - "),
-          _c("span", [_c("i", [_vm._v(" " + _vm._s(postcard.reciver))])]),
-        ]),
-        _vm._v(" "),
-        _c("div", [_c("p", [_vm._v(_vm._s(postcard.text))])]),
-        _vm._v(" "),
-        _c("div", [
-          postcard.image
-            ? _c("img", {
-                attrs: {
-                  src: "storage/myimage/" + postcard.image,
-                  width: "100px",
-                },
-              })
-            : _vm._e(),
-        ]),
-      ])
+      return _c(
+        "div",
+        { key: postcard.id, staticClass: "border border-dark p-3" },
+        [
+          _c("div", [
+            _c("span", { staticClass: "d-flex justify-content-around " }, [
+              _c("strong", [_vm._v(_vm._s(postcard.sender))]),
+              _vm._v(" "),
+              _c("i", [_vm._v(" " + _vm._s(postcard.reciver))]),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", [_c("p", [_vm._v(_vm._s(postcard.text))])]),
+          _vm._v(" "),
+          _c("div", { staticClass: "box" }, [
+            postcard.image
+              ? _c("img", {
+                  staticClass: "img-fluid",
+                  attrs: { src: "storage/myimage/" + postcard.image },
+                })
+              : _vm._e(),
+          ]),
+        ]
+      )
     }),
     0
   )
