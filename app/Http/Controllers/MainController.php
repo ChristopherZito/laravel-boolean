@@ -15,4 +15,11 @@ class MainController extends Controller
         $postcards = Postcard::all();
         return json_encode($postcards);
     }
+
+    public function create(){
+        return view('pages.create');
+    }
+    public function store(Request $request){
+
+    }
 }

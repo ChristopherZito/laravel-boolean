@@ -1957,7 +1957,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -37613,25 +37612,22 @@ var render = function () {
   return _c(
     "div",
     { staticClass: "container" },
-    [
-      _vm._v("\n    Postcard\n    "),
-      _vm._l(_vm.postcards, function (postcard) {
-        return _c("div", { key: postcard.id }, [
-          _c("div", [
-            _c("span", [_c("strong", [_vm._v(_vm._s(postcard.sender))])]),
-            _vm._v(" - "),
-            _c("span", [_vm._v(" " + _vm._s(postcard.reciver) + " ")]),
-          ]),
+    _vm._l(_vm.postcards, function (postcard) {
+      return _c("div", { key: postcard.id }, [
+        _c("div", [
+          _c("span", [_c("strong", [_vm._v(_vm._s(postcard.sender))])]),
+          _vm._v(" - "),
+          _c("span", [_c("i", [_vm._v(" " + _vm._s(postcard.reciver))])]),
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c("p", [_vm._v(_vm._s(postcard.text))]),
           _vm._v(" "),
-          _c("div", [
-            _c("p", [_vm._v(_vm._s(postcard.text))]),
-            _vm._v(" "),
-            _c("span"),
-          ]),
-        ])
-      }),
-    ],
-    2
+          _c("span"),
+        ]),
+      ])
+    }),
+    0
   )
 }
 var staticRenderFns = []

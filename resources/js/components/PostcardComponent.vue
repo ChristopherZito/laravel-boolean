@@ -1,9 +1,8 @@
 <template>
     <div class="container">
-        Postcard
         <div v-for="postcard in postcards" :key="postcard.id">
             <div>
-                <span> <strong>{{postcard.sender}}</strong> </span> - <span> {{postcard.reciver}} </span>
+                <span> <strong>{{postcard.sender}}</strong> </span> - <span> <i> {{postcard.reciver}}</i> </span>
             </div>
             <div>
                 <p>{{postcard.text}}</p>
