@@ -6,9 +6,9 @@
             </div>
             <div>
                 <p>{{postcard.text}}</p>
-                <span>
-                    <!-- <img src="" alt=""> -->
-                </span>
+            </div>
+            <div>
+                <img v-if="postcard.image" :src="'storage/myimage/' + postcard.image" width="100px">
             </div>
         </div>
     </div>

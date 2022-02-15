@@ -37620,10 +37620,17 @@ var render = function () {
           _c("span", [_c("i", [_vm._v(" " + _vm._s(postcard.reciver))])]),
         ]),
         _vm._v(" "),
+        _c("div", [_c("p", [_vm._v(_vm._s(postcard.text))])]),
+        _vm._v(" "),
         _c("div", [
-          _c("p", [_vm._v(_vm._s(postcard.text))]),
-          _vm._v(" "),
-          _c("span"),
+          postcard.image
+            ? _c("img", {
+                attrs: {
+                  src: "storage/myimage/" + postcard.image,
+                  width: "100px",
+                },
+              })
+            : _vm._e(),
         ]),
       ])
     }),

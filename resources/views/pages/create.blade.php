@@ -2,7 +2,8 @@
 @section('content')
     <div class="container">
         Create new Element:
-        <form action="{{route('store')}}" 
+        <form 
+        action="{{route('store')}}" 
         method="POST"
         enctype="multipart/form-data">
 
@@ -20,7 +21,7 @@
 
             <label for="image">Image</label><br>
             <input type="file" name="image"><br>
-
+            <br>
             <input type="submit" value="Create">
         </form>
     </div>
