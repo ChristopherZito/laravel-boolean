@@ -9,11 +9,14 @@
     <title>home</title>
 </head>
 <body>
-    @include('components.header')
+    <div id="app">
+        @include('components.header')
     
-    @yield('content')
+        @yield('content')
 
-    @include('components.footer')
+        @include('components.footer')
 
+    </div>
+    
 </body>
 </html>

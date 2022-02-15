@@ -13,3 +13,5 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', 'MainController@home') -> name('home');
+
+route::get('/api/get/postcard', 'MainController@getPostcard') -> name('postcard.get');
